@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.calendar.CalendarFragment"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+
+        >
+
+        <CalendarView
+            android:id="@+id/calendarFull"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dateTextAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:focusedMonthDateColor="@color/teal_700"
+            android:selectedWeekBackgroundColor="@color/teal_700"
+            android:showWeekNumber="false"
+            android:theme="@style/Widget.CalendarView.Custom"
+            android:unfocusedMonthDateColor="@color/teal_700"
+            android:weekDayTextAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:weekNumberColor="@color/teal_700"
+            android:weekSeparatorLineColor="@color/teal_700"
+
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
